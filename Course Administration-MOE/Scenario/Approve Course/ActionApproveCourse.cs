@@ -28,7 +28,7 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
         [Test]
         public void approveCourse()
         {
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(".");
             driver.Manage().Window.Maximize();
             verificationErrors = new StringBuilder();
 
@@ -39,7 +39,7 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
             //autoIt.WinActivate("Open");
 
             // Login Page
-            LoginRoleCCC.Login(driver);
+            LoginRoleHQCAO.Login(driver);
 
             ApproveUI addingCourse = new ApproveUI(driver);
             // Check Security Log-in
@@ -48,18 +48,39 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
             {
                 addingCourse.ClickButton._ClickByFindElement("//button[contains(text(),'Proceed')]");
             }
+            try
+            {
+                // Tab Menu
+                addingCourse.ClickMenu.ClickTabMenu("//span[contains(text(),'Course Administration')]");
+                Thread.Sleep(2000);
 
-            // Tab Menu
-            addingCourse.ClickMenu.ClickTabMenu("//span[contains(text(),'Course Administration')]");
-            Thread.Sleep(2000);
-            IWebElement element = driver.FindElement(By.XPath(""));
-            if (element.Displayed)
-            {
-                GreenMessage("Yes! I can see the element, it's right there!!!");
+                // Pending Course Approval menu
+                addingCourse.ClickButton._ClickButton("//div[contains(text(),'Pending Course Approval')]");
+
+                // Search Course
+                addingCourse.EnterTextBox.PasteTexts("//input[@placeholder='Search in Course Administration']", "Basketball Testing 298876294804421d");
+
+                // Choose course
+                addingCourse.ClickButton._ClickButton("//p[@class='main-title ng-star-inserted']");
+                Thread.Sleep(2000);
+
+                // Approve button
+                addingCourse.ClickButton._ClickButton("//button[contains(text(),'Approve')]");
+
+                // Input Comment
+                addingCourse.EnterTextBox.PasteTexts("//textarea[@placeholder='Please add comment ...']", "Agree");
+
+                // Proceed button
+                addingCourse.ClickButton._ClickButton("/html/body/app-root/kendo-dialog/div[2]/div/comment-dialog/div[3]/button[2]");
             }
-            else
+            catch (Exception e)
             {
-                RedMessage("Well, something went wrong, I couldn't see the element!");
+                RedMessage("Scenario Approve Course: Can not approve course !!!\n Reason: " + e);
+                return;
+            }
+            GreenMessage("Scenario Approve Course: Appove course success!!!!");
+            {
+
             }
         }
     }

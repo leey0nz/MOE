@@ -9,3 +9,14 @@ C:\Users\tuan.trinh\source\repos\Course Administration-MOE\Course Administration
 C:\Users\tuan.trinh\source\repos\Course Administration-MOE\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.dll
 C:\Users\tuan.trinh\source\repos\Course Administration-MOE\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.pdb
 C:\Users\tuan.trinh\source\repos\Course Administration-MOE\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.csprojAssemblyReference.cache
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\bin\Debug\netcoreapp2.1\Course Administration-MOE.deps.json
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\bin\Debug\netcoreapp2.1\Course Administration-MOE.runtimeconfig.json
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\bin\Debug\netcoreapp2.1\Course Administration-MOE.runtimeconfig.dev.json
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\bin\Debug\netcoreapp2.1\Course Administration-MOE.dll
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\bin\Debug\netcoreapp2.1\Course Administration-MOE.pdb
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.csprojAssemblyReference.cache
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.csproj.CoreCompileInputs.cache
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.AssemblyInfoInputs.cache
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.AssemblyInfo.cs
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.dll
+C:\Users\tuan.trinh\MOE-CAM\Course Administration-MOE\obj\Debug\netcoreapp2.1\Course Administration-MOE.pdb

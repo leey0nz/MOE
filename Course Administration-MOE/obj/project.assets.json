@@ -3752,11 +3752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tuan.trinh\\source\\repos\\Course Administration-MOE\\Course Administration-MOE\\Course Administration-MOE.csproj",
+      "projectUniqueName": "C:\\Users\\tuan.trinh\\MOE-CAM\\Course Administration-MOE\\Course Administration-MOE.csproj",
       "projectName": "Course Administration-MOE",
-      "projectPath": "C:\\Users\\tuan.trinh\\source\\repos\\Course Administration-MOE\\Course Administration-MOE\\Course Administration-MOE.csproj",
+      "projectPath": "C:\\Users\\tuan.trinh\\MOE-CAM\\Course Administration-MOE\\Course Administration-MOE.csproj",
       "packagesPath": "C:\\Users\\tuan.trinh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tuan.trinh\\source\\repos\\Course Administration-MOE\\Course Administration-MOE\\obj\\",
+      "outputPath": "C:\\Users\\tuan.trinh\\MOE-CAM\\Course Administration-MOE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
