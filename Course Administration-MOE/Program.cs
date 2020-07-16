@@ -13,8 +13,11 @@ namespace Course_Administration_MOE
         [STAThread]
         static void Main()
         {
-            ActionApproveCourse test = new ActionApproveCourse();
-            test.approveCourse();
+            ActionApproveCourse ApproveCourse = new ActionApproveCourse();
+            ApproveCourse.approveCourse();
+
+            CreateClassrun CreateNewClassrun = new CreateClassrun();
+            CreateNewClassrun.createClassrun();
         }
     }
 }

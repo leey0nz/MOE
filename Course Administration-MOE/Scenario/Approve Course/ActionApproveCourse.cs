@@ -58,7 +58,7 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
                 addingCourse.ClickButton._ClickButton("//div[contains(text(),'Pending Course Approval')]");
 
                 // Search Course
-                addingCourse.EnterTextBox.PasteTexts("//input[@placeholder='Search in Course Administration']", "Basketball Testing 298876294804421d");
+                addingCourse.EnterTextBox.PasteTexts("//input[@placeholder='Search in Course Administration']", "Basketball Testing 24b1297f224e4c2f");
 
                 // Choose course
                 addingCourse.ClickButton._ClickButton("//p[@class='main-title ng-star-inserted']");
