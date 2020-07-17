@@ -6,6 +6,7 @@ using System;
 using System.Text;
 using System.Threading;
 
+
 namespace Course_Administration_MOE.Scenario.Approve_Course
 {
     public class ActionApproveCourse
@@ -39,7 +40,7 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
             //autoIt.WinActivate("Open");
 
             // Login Page
-            LoginRoleHQCAO.Login(driver);
+            LoginRoleSA.Login(driver);
 
             ApproveUI addingCourse = new ApproveUI(driver);
             // Check Security Log-in
@@ -64,21 +65,32 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
                 addingCourse.ClickButton._ClickButton("//p[@class='main-title ng-star-inserted']");
                 Thread.Sleep(2000);
 
-                // Approve button
-                addingCourse.ClickButton._ClickButton("//button[contains(text(),'Approve')]");
+                //// Approve button
+                //addingCourse.ClickButton._ClickButton("//button[contains(text(),'Approve')]");
 
                 // Input Comment
                 addingCourse.EnterTextBox.PasteTexts("//textarea[@placeholder='Please add comment ...']", "Agree");
 
                 // Proceed button
                 addingCourse.ClickButton._ClickButton("/html/body/app-root/kendo-dialog/div[2]/div/comment-dialog/div[3]/button[2]");
+
+                // Toast message
+                addingCourse.ClickButton._ClickButton("/html/body/app-root/kendo-notification-container/div/kendo-notification/div");
+
+
             }
             catch (Exception e)
             {
                 RedMessage("Scenario Approve Course: Can not approve course !!!\n Reason: " + e);
+                Screenshot screenshotFail = ((ITakesScreenshot)driver).GetScreenshot();
+                var filePathFail = @"C:\cap-TCs\Fail-Can not approve Course " + addingCourse.EnterTextBox.GenerateName() + ".jpg";
+                screenshotFail.SaveAsFile(filePathFail);
                 return;
             }
             GreenMessage("Scenario Approve Course: Appove course success!!!!");
+            Screenshot screenshotPass = ((ITakesScreenshot)driver).GetScreenshot();
+            var filePathPass = @"C:\cap-TCs\Pass-Can not approve Course " + addingCourse.EnterTextBox.GenerateName() + ".jpg";
+            screenshotPass.SaveAsFile(filePathPass);
             {
 
             }

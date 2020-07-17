@@ -104,17 +104,23 @@ namespace Course_Administration_MOE.Scenario.Approve_Course
 
                 // All Class Runs
                 addingCourse.ClickButton._ClickButton("/html/body/app-root/app-shell/div/cam-outlet/div/div/div/cam-app/course-detail-page/div/div/kendo-tabstrip/div/classrun-management-page/div/div/kendo-tabstrip/ul/li/span");
-
             }
             catch (Exception e)
             {
                 RedMessage("Scenario Create New Classrun: Can not create classrun!!!\n Reason: " + e);
-                return;
+            Screenshot screenshotFail = ((ITakesScreenshot)driver).GetScreenshot();
+            var filePathFail = @"C:\cap-TCs\Fail-Can not create classrun " + addingCourse.EnterTextBox.GenerateName() + ".jpg";
+            screenshotFail.SaveAsFile(filePathFail);
+            return;
             }
             GreenMessage("Scenario Create New Classrun: Create classrun success!!!!");
+            Screenshot screenshotPass = ((ITakesScreenshot)driver).GetScreenshot();
+            var filePathPass = @"C:\cap-TCs\Pass-Create classrun success " + addingCourse.EnterTextBox.GenerateName() + ".jpg";
+            screenshotPass.SaveAsFile(filePathPass);
             {
 
             }
         }
+
     }
 }
